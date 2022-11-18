@@ -1,5 +1,6 @@
+#[macro_use]
+extern crate log;
 extern crate pretty_env_logger;
-#[macro_use] extern crate log;
 
 use teloxide::prelude::*;
 
@@ -20,7 +21,7 @@ async fn main() {
         let response_message = match message_content {
             "Hello there" => "General Kenobi!",
             "General Kenobi!" => "NOOOOOOOOOOOOO",
-            _ => "Hello there"
+            _ => "Hello there",
         };
         bot.send_message(chat_id, response_message).await?;
 
