@@ -7,7 +7,7 @@ use teloxide::prelude::*;
 async fn main() {
     pretty_env_logger::init();
 
-    info!("Starting throw dice bot...");
+    info!("Starting nifty bot...");
 
     let bot = Bot::from_env();
 
